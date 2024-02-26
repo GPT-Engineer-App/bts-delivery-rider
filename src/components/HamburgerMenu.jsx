@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
       case "/":
         title = "Home";
         break;
-      
+
       case "/dashboard":
         title = "Comprehensive Rider Dashboard";
         break;
@@ -57,6 +57,9 @@ const HamburgerMenu = () => {
               </Text>
               <Text as="a" href="/orders/check-out" onClick={onClose}>
                 Check Out
+              </Text>
+              <Text as="a" href="/orders" onClick={onClose}>
+                Orders
               </Text>
               <Text as="a" href="/profile" onClick={onClose}>
                 Profile

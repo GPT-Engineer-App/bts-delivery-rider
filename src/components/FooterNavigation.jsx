@@ -7,6 +7,7 @@ const FooterNavigation = () => {
       <Flex justify="space-between" align="center">
         <IconButton aria-label="Home" icon={<FaHome />} variant="ghost" color="white" />
         <IconButton aria-label="Orders" icon={<FaClipboardList />} variant="ghost" color="white" />
+        <IconButton aria-label="Orders" icon={<FaClipboardList />} variant="ghost" color="white" as="a" href="/orders" />
         <IconButton aria-label="Profile" icon={<FaUserCircle />} variant="ghost" color="white" />
       </Flex>
     </Box>
