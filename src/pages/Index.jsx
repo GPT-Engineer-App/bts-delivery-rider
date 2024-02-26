@@ -40,7 +40,7 @@ const Index = () => {
 
   return (
     <>
-      <Navigation />
+      // Navigation has been moved to the footer
       <Container maxW="container.md" py={5}>
         <VStack spacing={4}>
           <Heading as="h1" size="xl" textAlign="center">
@@ -100,6 +100,8 @@ const Index = () => {
           </Box>
         </VStack>
       </Container>
+      import FooterNavigation from "../components/FooterNavigation";
+      <FooterNavigation />
     </>
   );
 };

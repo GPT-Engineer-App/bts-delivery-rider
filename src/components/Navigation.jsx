@@ -1,30 +1,30 @@
 import React from "react";
-import { Box, Flex, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, VStack, Link, Icon } from "@chakra-ui/react";
 import { FaHome, FaListAlt, FaUser } from "react-icons/fa";
 
-const Navigation = () => {
+const FooterNavigation = () => {
   return (
-    <Flex bg="brand.800" p={4} justifyContent="space-between" alignItems="center" color="white">
-      <Box p="2">
-        <FaHome />
-        <Text ml="2" display="inline">
+    <Flex as="footer" bg="brand.800" p={4} justifyContent="space-around" alignItems="center" color="white" position="fixed" left="0" bottom="0" width="100%">
+      <VStack>
+        <Icon as={FaHome} w={6} h={6} />
+        <Link href="/" color="white">
           Home
-        </Text>
-      </Box>
-      <Box p="2">
-        <FaListAlt />
-        <Text ml="2" display="inline" as="a" href="/dashboard">
+        </Link>
+      </VStack>
+      <VStack>
+        <Icon as={FaListAlt} w={6} h={6} />
+        <Link href="/dashboard" color="white">
           Dashboard
-        </Text>
-      </Box>
-      <Box p="2">
-        <FaUser />
-        <Text ml="2" display="inline">
+        </Link>
+      </VStack>
+      <VStack>
+        <Icon as={FaUser} w={6} h={6} />
+        <Link href="/profile" color="white">
           Profile
-        </Text>
-      </Box>
+        </Link>
+      </VStack>
     </Flex>
   );
 };
 
-export default Navigation;
+export default FooterNavigation;
