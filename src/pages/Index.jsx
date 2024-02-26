@@ -40,7 +40,6 @@ const Index = () => {
 
   return (
     <>
-      // Navigation has been moved to the footer
       <Container maxW="container.md" py={5}>
         <VStack spacing={4}>
           <Heading as="h1" size="xl" textAlign="center">
@@ -100,7 +99,6 @@ const Index = () => {
           </Box>
         </VStack>
       </Container>
-      import FooterNavigation from "../components/Navigation"; // Rest of the code remains the same; FooterNavigation is correctly imported at the top of the file now
     </>
   );
 };
