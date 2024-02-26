@@ -54,20 +54,37 @@ const Index = () => {
               </Text>
               <Badge colorScheme="green">New</Badge>
             </Flex>
-            <Box>
-              <Image src={order.imageUrl} borderRadius="md" />
+            <Box p={4} borderWidth="1px" borderRadius="lg">
+              <Heading as="h3" size="md" mb={3}>
+                Route Details
+              </Heading>
+              <Flex direction="column" align="center" mb={4}>
+                <FaMapMarkedAlt size="2em" />
+                <Text>Map from Store to Customer</Text>
+                <Text fontSize="sm">ETA: 15 mins</Text>
+              </Flex>
+              <Flex direction="column" align="center">
+                <FaMapMarkedAlt size="2em" />
+                <Text>Map to Store for Pickup</Text>
+                <Text fontSize="sm">ETA: 5 mins</Text>
+              </Flex>
             </Box>
-            <List spacing={2}>
-              <ListItem>
-                <FaMapMarkedAlt /> Pickup: {order.pickupLocation}
-              </ListItem>
-              <ListItem>
-                <FaMapMarkedAlt /> Delivery: {order.deliveryLocation}
-              </ListItem>
-              <ListItem>Item: {order.item}</ListItem>
-              <ListItem>Customer: {order.customerName}</ListItem>
-              <ListItem>Phone: {order.customerPhone}</ListItem>
-            </List>
+            <Box p={4} borderWidth="1px" borderRadius="lg" mt={4}>
+              <Heading as="h3" size="md" mb={3}>
+                Order Details
+              </Heading>
+              <List spacing={2}>
+                <ListItem>
+                  <FaMapMarkedAlt /> Pickup: {order.pickupLocation}
+                </ListItem>
+                <ListItem>
+                  <FaMapMarkedAlt /> Delivery: {order.deliveryLocation}
+                </ListItem>
+                <ListItem>Item: {order.item}</ListItem>
+                <ListItem>Customer: {order.customerName}</ListItem>
+                <ListItem>Phone: {order.customerPhone}</ListItem>
+              </List>
+            </Box>
             <Flex justify="space-between">
               <Button leftIcon={<FaCheck />} colorScheme="green" onClick={acceptDelivery}>
                 Accept
