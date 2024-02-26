@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, VStack, Heading, Text } from "@chakra-ui/react";
-import FooterNavigation from "../components/Navigation";
+import FooterNavigation from "../components/FooterNavigation";
 import HamburgerMenu from "../components/HamburgerMenu";
 
 import { Flex, Spacer } from "@chakra-ui/react";
