@@ -1,8 +1,30 @@
 import React, { useState } from "react";
 import { Box, Flex, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack, Text, Image } from "@chakra-ui/react";
+import { useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const HamburgerMenu = () => {
+  const location = useLocation();
+
+  const PageTitle = () => {
+    let title = "";
+    switch (location.pathname) {
+      case "/":
+        title = "Home";
+        break;
+      case "/dashboard":
+        title = "Dashboard";
+        break;
+      // Add more cases for additional paths as needed
+      default:
+        title = "";
+    }
+    return title ? (
+      <Text fontSize="lg" color="white" fontWeight="bold" ml={4}>
+        {title}
+      </Text>
+    ) : null;
+  };
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -13,6 +35,7 @@ const HamburgerMenu = () => {
           <IconButton ref={btnRef} icon={<FaBars />} onClick={onOpen} variant="outline" aria-label="Open Menu" color="white" />
           <Flex justify="center" align="center">
             <Image src="/bts-delivery-logo.png" alt="BTS Delivery Logo" height="50px" />
+            <PageTitle />
           </Flex>
         </Flex>
       </Box>
