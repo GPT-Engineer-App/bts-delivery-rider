@@ -13,8 +13,8 @@ const Navigation = () => {
       </Box>
       <Box p="2">
         <FaListAlt />
-        <Text ml="2" display="inline">
-          Orders
+        <Text ml="2" display="inline" as="a" href="/dashboard">
+          Dashboard
         </Text>
       </Box>
       <Box p="2">
