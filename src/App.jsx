@@ -11,7 +11,7 @@ function App() {
       <HamburgerMenu />
       <Router>
         <Routes>
-          <Route path="/" element={<ComprehensiveRiderDashboard />} />
+          <Route path="/" element={<Index />} />
           <Route path="/dashboard" element={<RiderDashboard />} />
         </Routes>
       </Router>
