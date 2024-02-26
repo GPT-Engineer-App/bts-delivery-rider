@@ -100,8 +100,7 @@ const Index = () => {
           </Box>
         </VStack>
       </Container>
-      import FooterNavigation from "../components/FooterNavigation";
-      <FooterNavigation />
+      import FooterNavigation from "../components/Navigation"; // Rest of the code remains the same; FooterNavigation is correctly imported at the top of the file now
     </>
   );
 };

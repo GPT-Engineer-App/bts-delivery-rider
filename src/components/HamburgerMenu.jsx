@@ -22,6 +22,12 @@ const HamburgerMenu = () => {
               <Text as="a" href="/dashboard" onClick={onClose}>
                 Dashboard
               </Text>
+              <Text as="a" href="/orders/check-in" onClick={onClose}>
+                Check In
+              </Text>
+              <Text as="a" href="/orders/check-out" onClick={onClose}>
+                Check Out
+              </Text>
               <Text as="a" href="/profile" onClick={onClose}>
                 Profile
               </Text>
