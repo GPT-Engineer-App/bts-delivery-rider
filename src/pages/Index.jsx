@@ -42,9 +42,7 @@ const Index = () => {
     <>
       <Container maxW={{ base: "container.sm", md: "container.md" }} py={5}>
         <VStack spacing={4}>
-          <Heading as="h1" size="xl" textAlign="center">
-            BTS Delivery Rider App
-          </Heading>
+          {/* The heading has been moved to the HamburgerMenu component as a sticky header */}
           <Flex align="center" justify="center">
             <FaMotorcycle size="3em" />
           </Flex>

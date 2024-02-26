@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack, Text } from "@chakra-ui/react";
 import { FaBars } from "react-icons/fa";
 
 const HamburgerMenu = () => {
@@ -8,7 +8,14 @@ const HamburgerMenu = () => {
 
   return (
     <>
-      <IconButton ref={btnRef} icon={<FaBars />} onClick={onOpen} variant="outline" aria-label="Open Menu" />
+      <Box as="header" bg="brand.900" p={4} position="sticky" top={0} zIndex={1}>
+        <Flex justify="space-between" align="center">
+          <IconButton ref={btnRef} icon={<FaBars />} onClick={onOpen} variant="outline" aria-label="Open Menu" />
+          <Heading as="h1" size="lg" color="white">
+            Rider App
+          </Heading>
+        </Flex>
+      </Box>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} finalFocusRef={btnRef}>
         <DrawerOverlay />
         <DrawerContent>

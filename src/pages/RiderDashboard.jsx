@@ -8,14 +8,7 @@ import { Flex, Spacer } from "@chakra-ui/react";
 const RiderDashboard = () => {
   return (
     <>
-      <Flex as="header" p={4}>
-        <HamburgerMenu />
-        <Spacer />
-        <Heading as="h1" size="lg">
-          Rider Dashboard
-        </Heading>
-        <Spacer />
-      </Flex>
+      <HamburgerMenu />
       <Container maxWidth="container.xl" pt={4}>
         <VStack spacing={5}>
           <Text fontSize="xl">Your upcoming deliveries will be listed here.</Text>
