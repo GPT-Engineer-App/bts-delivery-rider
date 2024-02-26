@@ -12,10 +12,10 @@ const HamburgerMenu = () => {
       case "/":
         title = "Home";
         break;
+      
       case "/dashboard":
-        title = "Dashboard";
+        title = "Comprehensive Rider Dashboard";
         break;
-      // Add more cases for additional paths as needed
       default:
         title = "";
     }

@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/dashboard" element={<RiderDashboard />} />
+          <Route path="/dashboard" element={<ComprehensiveRiderDashboard />} />
         </Routes>
       </Router>
       <FooterNavigation />
