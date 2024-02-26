@@ -40,7 +40,7 @@ const Index = () => {
 
   return (
     <>
-      <Container maxW="container.md" py={5}>
+      <Container maxW={{ base: "container.sm", md: "container.md" }} py={5}>
         <VStack spacing={4}>
           <Heading as="h1" size="xl" textAlign="center">
             BTS Delivery Rider App
