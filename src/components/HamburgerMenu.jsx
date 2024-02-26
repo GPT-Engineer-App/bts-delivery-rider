@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Flex, Heading, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack, Text } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, VStack, Text, Image } from "@chakra-ui/react";
 import { FaBars } from "react-icons/fa";
 
 const HamburgerMenu = () => {
