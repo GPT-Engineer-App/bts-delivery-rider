@@ -46,7 +46,7 @@ const Index = () => {
           <Flex align="center" justify="center">
             <FaMotorcycle size="3em" />
           </Flex>
-          <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
+          <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} shadow="2xl">
             <Stack spacing={4}>
               <Flex justify="space-between">
                 <Text fontSize="lg" fontWeight="bold">
@@ -54,7 +54,7 @@ const Index = () => {
                 </Text>
                 <Badge colorScheme="green">New</Badge>
               </Flex>
-              <Box p={4} borderWidth="1px" borderRadius="lg">
+              <Box p={4} borderWidth="1px" borderRadius="lg" shadow="2xl">
                 <Heading as="h3" size="md" mb={3}>
                   Route Details
                 </Heading>
@@ -69,7 +69,7 @@ const Index = () => {
                   <Text fontSize="sm">ETA: 5 mins</Text>
                 </Flex>
               </Box>
-              <Box p={4} borderWidth="1px" borderRadius="lg" mt={4}>
+              <Box p={4} borderWidth="1px" borderRadius="lg" mt={4} shadow="2xl">
                 <Heading as="h3" size="md" mb={3}>
                   Order Details
                 </Heading>

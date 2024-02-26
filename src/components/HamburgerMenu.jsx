@@ -10,10 +10,10 @@ const HamburgerMenu = () => {
     <>
       <Box as="header" bg="brand.900" p={4} position="sticky" top={0} zIndex={1}>
         <Flex justify="space-between" align="center">
-          <IconButton ref={btnRef} icon={<FaBars />} onClick={onOpen} variant="outline" aria-label="Open Menu" />
-          <Heading as="h1" size="lg" color="white">
-            Rider App
-          </Heading>
+          <IconButton ref={btnRef} icon={<FaBars />} onClick={onOpen} variant="outline" aria-label="Open Menu" color="white" />
+          <Flex justify="center" align="center">
+            <Image src="/bts-delivery-logo.png" alt="BTS Delivery Logo" height="50px" />
+          </Flex>
         </Flex>
       </Box>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} finalFocusRef={btnRef}>
